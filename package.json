@@ -1,0 +1,148 @@
+{
+  "name": "icon-demo",
+  "version": "0.0.0",
+  "description": "Icon sets power by lsicon",
+  "homepage": "https://www.lsicon.com?package=icon-demo",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:leefanv/icon-demo.git"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "changelog": "pnpm changeset",
+    "version": "pnpm changeset version",
+    "release": "pnpm changeset tag && git push --follow-tags && pnpm publish --no-git-checks",
+    "clean": "rm -rf node_modules",
+    "build": "lsicon build"
+  },
+  "peerDependencies": {
+    "@types/react": ">=16",
+    "react": ">=16"
+  },
+  "dependencies": {
+    "@changesets/changelog-github": "0.5.0",
+    "@changesets/cli": "2.27.5",
+    "lsicon": "0.0.1"
+  },
+  "lsicon": {
+    "meta": [
+      {
+        "type": "style",
+        "name": "outline",
+        "title": "Outline",
+        "children": [
+          {
+            "type": "category",
+            "name": "class-a",
+            "title": "ClassA",
+            "children": [
+              {
+                "name": "icon-a",
+                "style": "outline",
+                "category": "class-a",
+                "title": "IconA",
+                "fileName": "IconAIcon",
+                "fileContent": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"8\" cy=\"8\" r=\"5.5\" stroke=\"black\"/>\n</svg>\n"
+              }
+            ]
+          },
+          {
+            "type": "category",
+            "name": "class-b",
+            "title": "ClassB",
+            "children": [
+              {
+                "name": "icon-b",
+                "style": "outline",
+                "category": "class-b",
+                "title": "IconB",
+                "fileName": "IconBIcon",
+                "fileContent": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M13.5 13.5H2.5L7.5 3.5L13.5 13.5Z\" stroke=\"black\"/>\n</svg>\n"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "style",
+        "name": "filled",
+        "title": "Filled",
+        "children": [
+          {
+            "type": "category",
+            "name": "class-a",
+            "title": "ClassA",
+            "children": [
+              {
+                "name": "icon-a",
+                "style": "filled",
+                "category": "class-a",
+                "title": "IconA",
+                "fileName": "IconAFilledIcon",
+                "fileContent": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"8\" cy=\"8\" r=\"6\" fill=\"black\"/>\n</svg>\n"
+              }
+            ]
+          },
+          {
+            "type": "category",
+            "name": "class-b",
+            "title": "ClassB",
+            "children": [
+              {
+                "name": "icon-b",
+                "style": "filled",
+                "category": "class-b",
+                "title": "IconB",
+                "fileName": "IconBFilledIcon",
+                "fileContent": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M13.5 13.5H2.5L7.5 3.5L13.5 13.5Z\" fill=\"black\"/>\n</svg>\n"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "icons": [
+      {
+        "name": "icon-a",
+        "style": "outline",
+        "category": "class-a",
+        "title": "IconA",
+        "fileName": "IconAIcon",
+        "fileContent": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"8\" cy=\"8\" r=\"5.5\" stroke=\"black\"/>\n</svg>\n"
+      },
+      {
+        "name": "icon-a",
+        "style": "filled",
+        "category": "class-a",
+        "title": "IconA",
+        "fileName": "IconAFilledIcon",
+        "fileContent": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"8\" cy=\"8\" r=\"6\" fill=\"black\"/>\n</svg>\n"
+      },
+      {
+        "name": "icon-b",
+        "style": "outline",
+        "category": "class-b",
+        "title": "IconB",
+        "fileName": "IconBIcon",
+        "fileContent": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M13.5 13.5H2.5L7.5 3.5L13.5 13.5Z\" stroke=\"black\"/>\n</svg>\n"
+      },
+      {
+        "name": "icon-b",
+        "style": "filled",
+        "category": "class-b",
+        "title": "IconB",
+        "fileName": "IconBFilledIcon",
+        "fileContent": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M13.5 13.5H2.5L7.5 3.5L13.5 13.5Z\" fill=\"black\"/>\n</svg>\n"
+      }
+    ]
+  }
+}
